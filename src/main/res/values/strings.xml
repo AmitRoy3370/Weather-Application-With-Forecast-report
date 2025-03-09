@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Weather Application</string>
+    <string name="weather_app">Weather App</string>
+    <string name="city_name">City Name</string>
+    <string name="weather">Weather</string>
+    <string name="forecast">Forecast</string>
+    <string name="apiKey">b4f1a2bbeceef0cf16e865242125ec4a</string>
+</resources>

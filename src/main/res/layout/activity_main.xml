@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        tools:ignore="UselessParent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textAllCaps="true"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:text="@string/weather_app"
+        android:paddingBottom="16dp"
+        android:id="@+id/title"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/city"
+        android:textSize = "30sp"
+        android:textColor="@color/black"
+        android:hint="@string/city_name"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:paddingBottom="12dp"
+        android:inputType="text"
+        android:background="@drawable/edit_text_background"
+        android:layout_gravity="center"
+        android:autofillHints="City Name"
+        android:importantForAutofill="yes"/>
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="@string/weather"
+            android:layout_gravity="center"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginStart="0dp"
+            android:id="@+id/weatherSearch" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="@string/forecast"
+            android:layout_gravity="center"
+            android:background="@drawable/edit_text_background"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            android:layout_marginStart="0dp"
+            android:id="@+id/forecastSearch"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherInfo"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="30sp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherForecastInfo"
+        android:layout_margin="10dp"
+        tools:ignore="NestedScrolling" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
